@@ -32,6 +32,11 @@ function OpenLimitateurMenu()
                                 end
                         end
                     })
+                    RageUI.Button("Désactivé", description, {}, true, {
+                        onSelected = function()
+                                vitesse(0)
+                        end
+                    })
                     for k, value in pairs(kmValue) do
                         RageUI.Button(value.." KM", description, {}, true, {
                             onSelected = function()
